@@ -1,0 +1,12 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Camiseta branca",
+            "size": "GRANDE",
+            "price": 19.99,
+            "type" : "BASICA",
+            "url" : ""
+        }
+    ]
+}
