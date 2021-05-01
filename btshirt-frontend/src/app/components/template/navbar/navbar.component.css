@@ -1,0 +1,14 @@
+.navbar {
+    justify-content: center;
+    background-color: #000000;
+}
+
+.navbar img {
+    margin-top: 8px;
+    max-height: 64px;
+}
+
+.navbar-line {
+    height: 3px;
+    background-color: #c888c3;
+}
