@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http'
  
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list'
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,7 +27,8 @@ import { MenuComponent } from './components/template/menu/menu.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
    ],
   providers: [],
   bootstrap: [AppComponent]

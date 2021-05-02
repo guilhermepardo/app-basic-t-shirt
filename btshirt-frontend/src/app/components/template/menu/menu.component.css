@@ -1,4 +1,20 @@
 .menu {
     background-color: #252525;
-    width: 10%;
+    width: 8%;
+}
+
+.section_one {
+    padding-top: 20px;
+}
+
+.section_one a {
+    color: white;
+}
+
+.section_one i {
+    margin-right: 5px;
+}
+
+.icon {
+    padding-top: 20px;
 }
