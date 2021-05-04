@@ -18,3 +18,8 @@
 .icon {
     padding-top: 20px;
 }
+
+.content {
+    padding: 16px;
+    background-color: #fff;
+}
