@@ -1,1 +1,37 @@
-<p>edit works!</p>
+<mat-card class="edit-form">
+
+    <mat-card-title>
+        Atualizar informações de uma camiseta
+    </mat-card-title>
+
+    <form>
+        
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="shirt.name" name="name">  
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Tamanho" [(ngModel)]="shirt.size" name="size">  
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Tipo" [(ngModel)]="shirt.type" name="type">  
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="URL da imagem" [(ngModel)]="shirt.url" name="url">  
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Preço" [(ngModel)]="shirt.price" name="price">  
+        </mat-form-field>
+
+    </form>
+
+    <button class="button-add" (click)="updateShirt()">Atualizar</button>
+
+    <button class="button-cancel" (click)="cancel()">Cancelar</button>
+
+
+
+</mat-card>

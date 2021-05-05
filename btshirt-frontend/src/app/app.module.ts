@@ -27,6 +27,10 @@ import { EditComponent } from './components/stock/edit/edit.component';
 import { DeleteComponent } from './components/stock/delete/delete.component';
 import { ShirtStockComponent } from './views/shirt-stock/shirt-stock.component';
 import { MainPageComponent } from './views/main-page/main-page.component';
+import { TableSchematicComponent } from './components/schematics/table-schematic/table-schematic.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { MainPageComponent } from './views/main-page/main-page.component';
     EditComponent,
     DeleteComponent,
     ShirtStockComponent,
-    MainPageComponent
+    MainPageComponent,
+    TableSchematicComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,10 @@ import { MainPageComponent } from './views/main-page/main-page.component';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

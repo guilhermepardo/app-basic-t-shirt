@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './views/main-page/main-page.component';
 import { ShirtStockComponent } from './views/shirt-stock/shirt-stock.component';
 import { CreateComponent } from './components/stock/create/create.component';
+import { EditComponent } from './components/stock/edit/edit.component';
+import { DeleteComponent } from './components/stock/delete/delete.component';
 
 const routes : Routes = [
   {
@@ -17,6 +19,14 @@ const routes : Routes = [
   {
     path: "estoque/criar",
     component: CreateComponent
+  },
+  {
+    path: "estoque/editar/:id",
+    component: EditComponent
+  },
+  {
+    path: "estoque/excluir/:id",
+    component: DeleteComponent
   }
 ]
 

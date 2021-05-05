@@ -11,9 +11,12 @@ export class ViewComponent implements OnInit {
 
   shirts : Shirt[]
 
+  displayedColumns = ['name', 'type', 'size', 'price', 'actions'];
+
   constructor(
     private shirtService : ShirtService
   ) { }
+
 
   ngOnInit(): void {
     this.shirtService.get().subscribe(shirtList => {

@@ -20,6 +20,11 @@ export class ShirtService {
     return this.http.get<Shirt[]>(this.BASE_URL)
   }
 
+  getById(id : string) : Observable<Shirt> {
+    const URI = `${this.BASE_URL}/${id}`
+    return this.http.get<Shirt>(URI)
+  }
+
   post(shirt: Shirt): Observable<Shirt> {
     return this.http.post<Shirt>(this.BASE_URL, shirt)
   }
