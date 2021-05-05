@@ -1,12 +1,28 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Camiseta branca",
-            "size": "GRANDE",
-            "price": 19.99,
-            "type" : "BASICA",
-            "url" : ""
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Camiseta branca",
+      "size": "GRANDE",
+      "price": 19.99,
+      "type": "BASICA",
+      "url": ""
+    },
+    {
+      "name": "Camiseta preta",
+      "size": "GG",
+      "price": "29.99",
+      "type": "BÁSICA",
+      "url": "..",
+      "id": 2
+    },
+    {
+      "name": "Camiseta RIP N' DIP",
+      "size": "G",
+      "price": "149.99",
+      "type": "ESTAMPADA",
+      "url": "..",
+      "id": 3
+    }
+  ]
 }
