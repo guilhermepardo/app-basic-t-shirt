@@ -2,8 +2,8 @@
 
     <mat-card-title>Tem certeza que deseja excluir essa camiseta?</mat-card-title>
     
-    <button class="button-add" (click)="deleteShirt()">Excluir</button>
+    <button appBtnConfirm (click)="deleteShirt()">Excluir</button>
 
-    <button class="button-cancel" (click)="cancel()">Cancelar</button>
+    <button appBtnCancel (click)="cancel()">Cancelar</button>
 
 </mat-card>

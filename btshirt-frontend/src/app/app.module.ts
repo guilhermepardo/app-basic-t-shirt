@@ -31,6 +31,8 @@ import { TableSchematicComponent } from './components/schematics/table-schematic
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { BtnConfirmDirective } from './directives/btn-confirm.directive';
+import { BtnCancelDirective } from './directives/btn-cancel.directive';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { MatSortModule } from '@angular/material/sort';
     DeleteComponent,
     ShirtStockComponent,
     MainPageComponent,
-    TableSchematicComponent
+    TableSchematicComponent,
+    BtnConfirmDirective,
+    BtnCancelDirective
   ],
   imports: [
     BrowserModule,
