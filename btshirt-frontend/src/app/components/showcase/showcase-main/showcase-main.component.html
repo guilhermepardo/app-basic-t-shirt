@@ -1,0 +1,21 @@
+<div class="row">
+
+    <div *ngFor="let shirt of shirts" class="column">
+
+        <div class="card">
+
+            <img src="{{ shirt.url }}">
+
+            <div class="container">
+
+                <h4>{{shirt.name}}</h4>
+
+                <p>R$ {{ shirt.price }}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

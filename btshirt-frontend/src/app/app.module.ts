@@ -33,6 +33,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { BtnConfirmDirective } from './directives/btn-confirm.directive';
 import { BtnCancelDirective } from './directives/btn-cancel.directive';
+import { ShowcaseMainComponent } from './components/showcase/showcase-main/showcase-main.component';
+import { ShowcaseBasicComponent } from './components/showcase/showcase-basic/showcase-basic.component';
+import { ShowcaseStampedComponent } from './components/showcase/showcase-stamped/showcase-stamped.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { BtnCancelDirective } from './directives/btn-cancel.directive';
     MainPageComponent,
     TableSchematicComponent,
     BtnConfirmDirective,
-    BtnCancelDirective
+    BtnCancelDirective,
+    ShowcaseMainComponent,
+    ShowcaseBasicComponent,
+    ShowcaseStampedComponent
   ],
   imports: [
     BrowserModule,

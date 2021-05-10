@@ -5,7 +5,7 @@
       "size": "GG",
       "price": "29.99",
       "type": "BÁSICA",
-      "url": "..",
+      "url": "https://keydesign.vteximg.com.br/arquivos/ids/212040-638-638/Long---branca-5--1-.jpg?v=637552411535370000",
       "id": 2
     },
     {
@@ -13,8 +13,16 @@
       "size": "G",
       "price": "149.99",
       "type": "ESTAMPADA",
-      "url": "..",
+      "url": "https://www.hipnoise.com.br/wp-content/uploads/2021/03/RIPDP-02A.jpg",
       "id": 3
+    },
+    {
+      "name": "Camiseta branca",
+      "size": "G",
+      "price": "29.99",
+      "type": "BÁSICA",
+      "url": "https://keydesign.vteximg.com.br/arquivos/ids/212040-638-638/Long---branca-5--1-.jpg?v=637552411535370000",
+      "id": 4
     }
   ]
 }
