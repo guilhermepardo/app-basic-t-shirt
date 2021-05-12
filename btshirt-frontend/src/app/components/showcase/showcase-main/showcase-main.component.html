@@ -2,7 +2,7 @@
 
     <div *ngFor="let shirt of shirts" class="column">
 
-        <div class="card" >
+        <div routerLink="/produto/{{ shirt.id }}" class="card" >
 
             <img src="{{ shirt.url }}">
 
