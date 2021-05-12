@@ -6,6 +6,7 @@ import { ShirtStockComponent } from './views/shirt-stock/shirt-stock.component';
 import { CreateComponent } from './components/stock/create/create.component';
 import { EditComponent } from './components/stock/edit/edit.component';
 import { DeleteComponent } from './components/stock/delete/delete.component';
+import { ViewShirtComponent } from './views/view-shirt/view-shirt.component';
 
 const routes : Routes = [
   {
@@ -27,6 +28,10 @@ const routes : Routes = [
   {
     path: "estoque/excluir/:id",
     component: DeleteComponent
+  },
+  {
+    path: "produto/:id",
+    component: ViewShirtComponent
   }
 ]
 

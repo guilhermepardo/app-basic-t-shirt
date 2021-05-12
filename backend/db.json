@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "Camiseta preta",
-      "size": "GG",
+      "size": "M",
       "price": "29.99",
       "type": "BÁSICA",
       "url": "https://keydesign.vteximg.com.br/arquivos/ids/212040-638-638/Long---branca-5--1-.jpg?v=637552411535370000",
@@ -23,6 +23,14 @@
       "type": "BÁSICA",
       "url": "https://keydesign.vteximg.com.br/arquivos/ids/212040-638-638/Long---branca-5--1-.jpg?v=637552411535370000",
       "id": 4
+    },
+    {
+      "name": "Camiseta amarela",
+      "size": "M",
+      "price": "29.99",
+      "type": "BASICA",
+      "url": "..",
+      "id": 5
     }
   ]
 }

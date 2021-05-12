@@ -11,7 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatSelectModule} from '@angular/material/select';
 
 
 import { FormsModule } from '@angular/forms';
@@ -36,6 +37,7 @@ import { BtnCancelDirective } from './directives/btn-cancel.directive';
 import { ShowcaseMainComponent } from './components/showcase/showcase-main/showcase-main.component';
 import { ShowcaseBasicComponent } from './components/showcase/showcase-basic/showcase-basic.component';
 import { ShowcaseStampedComponent } from './components/showcase/showcase-stamped/showcase-stamped.component';
+import { ViewShirtComponent } from './views/view-shirt/view-shirt.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { ShowcaseStampedComponent } from './components/showcase/showcase-stamped
     BtnCancelDirective,
     ShowcaseMainComponent,
     ShowcaseBasicComponent,
-    ShowcaseStampedComponent
+    ShowcaseStampedComponent,
+    ViewShirtComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +76,8 @@ import { ShowcaseStampedComponent } from './components/showcase/showcase-stamped
     MatSnackBarModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,13 +10,41 @@
             <input matInput placeholder="Nome" [(ngModel)]="shirt.name" name="name">  
         </mat-form-field>
 
-        <mat-form-field>
+        <mat-form-field> 
+
+            <select matNativeControl [(ngModel)]="shirt.size" name="size">
+
+                <option value="" disabled selected>Selecione um tamanho</option>
+                <option value="PP">PP</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+                <option value="XG">XG</option>
+
+            </select>
+
+       </mat-form-field>
+
+       <mat-form-field> 
+
+        <select matNativeControl [(ngModel)]="shirt.type" name="type">
+
+            <option value="" disabled selected>Selecione o tipo da camiseta</option>
+            <option value="BÁSICA">Básica</option>
+            <option value="ESTAMPADA">Estampada</option>
+
+        </select>
+
+   </mat-form-field>
+
+        <!-- <mat-form-field>
             <input matInput placeholder="Tamanho" [(ngModel)]="shirt.size" name="size">  
         </mat-form-field>
 
         <mat-form-field>
             <input matInput placeholder="Tipo" [(ngModel)]="shirt.type" name="type">  
-        </mat-form-field>
+        </mat-form-field> -->
 
         <mat-form-field>
             <input matInput placeholder="URL da imagem" [(ngModel)]="shirt.url" name="url">  
