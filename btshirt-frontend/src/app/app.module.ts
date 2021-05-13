@@ -38,6 +38,8 @@ import { ShowcaseMainComponent } from './components/showcase/showcase-main/showc
 import { ShowcaseBasicComponent } from './components/showcase/showcase-basic/showcase-basic.component';
 import { ShowcaseStampedComponent } from './components/showcase/showcase-stamped/showcase-stamped.component';
 import { ViewShirtComponent } from './views/view-shirt/view-shirt.component';
+import { StampedPageComponent } from './views/stamped-page/stamped-page.component';
+import { BasicPageComponent } from './views/basic-page/basic-page.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { ViewShirtComponent } from './views/view-shirt/view-shirt.component';
     ShowcaseMainComponent,
     ShowcaseBasicComponent,
     ShowcaseStampedComponent,
-    ViewShirtComponent
+    ViewShirtComponent,
+    StampedPageComponent,
+    BasicPageComponent
   ],
   imports: [
     BrowserModule,

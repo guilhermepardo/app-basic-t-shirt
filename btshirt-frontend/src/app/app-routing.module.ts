@@ -7,11 +7,21 @@ import { CreateComponent } from './components/stock/create/create.component';
 import { EditComponent } from './components/stock/edit/edit.component';
 import { DeleteComponent } from './components/stock/delete/delete.component';
 import { ViewShirtComponent } from './views/view-shirt/view-shirt.component';
+import { BasicPageComponent } from './views/basic-page/basic-page.component';
+import { StampedPageComponent } from './views/stamped-page/stamped-page.component';
 
 const routes : Routes = [
   {
     path: "",
     component: MainPageComponent
+  },
+  {
+    path: "basicas",
+    component: BasicPageComponent 
+  },
+  {
+    path: "estampadas",
+    component: StampedPageComponent
   },
   {
     path: "estoque",
