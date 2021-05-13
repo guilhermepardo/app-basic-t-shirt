@@ -25,6 +25,11 @@ export class ShirtService {
     return this.http.get<Shirt>(URI)
   }
 
+  getByType(type : string) : Observable<Shirt[]> {
+    const URI = `${this.BASE_URL}?type=${type}`
+    return this.http.get<Shirt[]>(URI)
+  }
+
   post(shirt: Shirt): Observable<Shirt> {
     return this.http.post<Shirt>(this.BASE_URL, shirt)
   }

@@ -13,6 +13,7 @@ export class BtnConfirmDirective {
     const DOM_ELEMENT = elementRef.nativeElement
 
     const BUTTON_CANCEL_STYLE = {
+      'cursor': 'pointer',
       'background-color': '#4CAF50',
       'border': 'none',
       'color': 'white',

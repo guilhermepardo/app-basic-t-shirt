@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Shirt } from '../../models/shirt.model';
+import { ShirtService } from '../../services/shirt.service';
 
 @Component({
   selector: 'app-showcase-stamped',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowcaseStampedComponent implements OnInit {
 
-  constructor() { }
+  shirts : Shirt[]
+
+  constructor(
+    private shirtService : ShirtService
+  ) { }
 
   ngOnInit(): void {
+    this.shirtService.getByType("ESTAMPADA")
+    .subscribe(shirtList => {
+      this.shirts = shirtList
+    })
   }
 
 }

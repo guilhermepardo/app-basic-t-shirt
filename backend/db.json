@@ -31,6 +31,14 @@
       "type": "BASICA",
       "url": "..",
       "id": 5
+    },
+    {
+      "name": "camiseta estampoada",
+      "size": "G",
+      "price": "24.99",
+      "type": "ESTAMPADA",
+      "url": ",,,,",
+      "id": 6
     }
   ]
 }

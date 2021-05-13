@@ -1,4 +1,5 @@
 button {
+    cursor: pointer;
     align-items: center;
     background-color: #c888c3;
     border: none;

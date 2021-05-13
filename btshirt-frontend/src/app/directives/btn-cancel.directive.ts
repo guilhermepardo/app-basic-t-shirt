@@ -13,6 +13,7 @@ export class BtnCancelDirective {
     const DOM_ELEMENT = elementRef.nativeElement
 
     const BUTTON_CANCEL_STYLE = {
+      'cursor': 'pointer',
       'background-color': '#f54e4e',
       'border': 'none',
       'color': 'white',

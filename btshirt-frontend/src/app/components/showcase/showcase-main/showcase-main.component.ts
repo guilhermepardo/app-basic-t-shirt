@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Shirt } from '../../models/shirt.model';
 import { ShirtService } from '../../services/shirt.service';
 
@@ -10,20 +9,17 @@ import { ShirtService } from '../../services/shirt.service';
 })
 export class ShowcaseMainComponent implements OnInit {
 
-  shirts : Shirt[]
-
-  shirt : Shirt
+  shirts: Shirt[]
 
   constructor(
-    private shirtService : ShirtService,
-    private router : Router
+    private shirtService: ShirtService
   ) { }
 
   ngOnInit(): void {
-
-    this.shirtService.get().subscribe(shirtList => {
+      this.shirtService.get()
+      .subscribe(shirtList => {
       this.shirts = shirtList
-    } )
+    })
 
   }
 
