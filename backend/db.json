@@ -25,20 +25,12 @@
       "id": 4
     },
     {
-      "name": "Camiseta amarela",
-      "size": "M",
-      "price": "29.99",
-      "type": "BÁSICA",
-      "url": "..",
-      "id": 5
-    },
-    {
-      "name": "camiseta estampoada",
+      "name": "ANTI SOCIAL BLACK T-SHIRT",
       "size": "G",
-      "price": "24.99",
+      "price": "1345.99",
       "type": "ESTAMPADA",
-      "url": ",,,,",
-      "id": 6
+      "url": "https://cdn-images.farfetch-contents.com/15/09/33/43/15093343_26581664_1000.jpg",
+      "id": 7
     }
   ]
 }
