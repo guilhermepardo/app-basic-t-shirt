@@ -12,7 +12,7 @@ export class ShirtService {
   BASE_URL: string = 'http://localhost:3000/products'
 
   constructor(
-    private http: HttpClient,
+    private http: HttpClient, 
     private snackBar : MatSnackBar
   ) { }
 
