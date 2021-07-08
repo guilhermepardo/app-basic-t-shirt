@@ -16,6 +16,14 @@ export class ShirtService {
     private snackBar : MatSnackBar
   ) { }
 
+  popInfo(info : string, error = false) : void {
+    this.snackBar.open(info, "ok!", {
+      duration: 2000,
+      horizontalPosition: "right",
+      verticalPosition: "top"
+    })
+  }
+
   get(): Observable<Shirt[]> {
     return this.http.get<Shirt[]>(this.BASE_URL)
   }
@@ -40,14 +48,6 @@ export class ShirtService {
 
   put(shirt: Shirt): Observable<Shirt> {
     return this.http.put<Shirt>(`${this.BASE_URL}/${shirt.id}`, shirt)
-  }
-
-  popInfo(info : string) : void {
-    this.snackBar.open(info, "ok!", {
-      duration: 2000,
-      horizontalPosition: "right",
-      verticalPosition: "top"
-    })
   }
 
 }

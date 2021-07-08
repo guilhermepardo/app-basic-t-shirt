@@ -10,7 +10,7 @@
 
                 <h4>{{shirt.name}}</h4>
 
-                <p>R$ {{ shirt.price }}</p>
+                <p>{{ shirt.price | currency: 'BRL' }}</p>
 
             </div>
 
