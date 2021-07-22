@@ -1,5 +1,5 @@
 export interface Shirt {
-    id? : number
+    id? : string
     name : string
     size : string
     price : number

@@ -9,14 +9,14 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ShirtService {
 
-  BASE_URL: string = 'http://localhost:3000/products'
+  BASE_URL: string = 'http://localhost:3000/shirts'
 
   constructor(
     private http: HttpClient, 
     private snackBar : MatSnackBar
   ) { }
 
-  popInfo(info : string, error = false) : void {
+  popInfo(info : string) : void {
     this.snackBar.open(info, "ok!", {
       duration: 2000,
       horizontalPosition: "right",
@@ -29,25 +29,26 @@ export class ShirtService {
   }
 
   getById(id : string) : Observable<Shirt> {
-    const URI = `${this.BASE_URL}/${id}`
+    const URI = `${this.BASE_URL}/get/${id}`
     return this.http.get<Shirt>(URI)
   }
 
   getByType(type : string) : Observable<Shirt[]> {
-    const URI = `${this.BASE_URL}?type=${type}`
+    const URI = `${this.BASE_URL}/${type}`
     return this.http.get<Shirt[]>(URI)
   }
 
   post(shirt: Shirt): Observable<Shirt> {
-    return this.http.post<Shirt>(this.BASE_URL, shirt)
+    const URI = `${this.BASE_URL}/new`
+    return this.http.post<Shirt>(URI, shirt)
   }
 
   delete(shirt: Shirt): Observable<Shirt> {
-    return this.http.delete<Shirt>(`${this.BASE_URL}/${shirt.id}`)
+    return this.http.delete<Shirt>(`${this.BASE_URL}/delete/${shirt.id}`)
   }
 
   put(shirt: Shirt): Observable<Shirt> {
-    return this.http.put<Shirt>(`${this.BASE_URL}/${shirt.id}`, shirt)
+    return this.http.put<Shirt>(`${this.BASE_URL}/update/${shirt.id}`, shirt)
   }
 
 }

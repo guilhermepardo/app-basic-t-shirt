@@ -16,7 +16,7 @@ export class ShowcaseBasicComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.shirtService.getByType("BÁSICA")
+    this.shirtService.getByType("basic")
     .subscribe(shirtList => {
       this.shirts = shirtList
     })

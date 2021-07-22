@@ -16,7 +16,7 @@ export class ShowcaseStampedComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.shirtService.getByType("ESTAMPADA")
+    this.shirtService.getByType("stamped")
     .subscribe(shirtList => {
       this.shirts = shirtList
     })
