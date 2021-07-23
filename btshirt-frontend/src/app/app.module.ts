@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
 
+
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -39,12 +40,6 @@ import { ShowcaseStampedComponent } from './components/showcase/showcase-stamped
 import { ViewShirtComponent } from './views/view-shirt/view-shirt.component';
 import { StampedPageComponent } from './views/stamped-page/stamped-page.component';
 import { BasicPageComponent } from './views/basic-page/basic-page.component';
-
-import { LOCALE_ID } from '@angular/core';
-import { registerLocaleData } from '@angular/common';
-import localePt from '@angular/common/locales/pt';
-
-registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -88,12 +83,7 @@ registerLocaleData(localePt);
     MatSortModule,
     MatSelectModule
   ],
-  providers: [
-    {
-      provide: LOCALE_ID,
-      useValue: 'pt-BR'
-    }    
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
